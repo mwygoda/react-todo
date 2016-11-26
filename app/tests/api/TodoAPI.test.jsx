@@ -71,5 +71,18 @@ describe('TodoAPI', () => {
     var filteredTodos = TodoAPI.filterTodos(todos, false, '');
     expect (filteredTodos.length).toBe(1);
   });
+  it('should return uncompleted todos first ', ()=> {
+    var filteredTodos=TodoAPI.filterTodos(todos,true,'');
+    expect(filteredTodos[0].completed).toBe(false);
+  });
+  it('should return only items contains searchText', () => {
+    var filteredTodos = TodoAPI.filterTodos(todos, true, 'some');
+    expect (filteredTodos.length).toBe(2);
+  });
+  it('should return all items if searchText is empty', () => {
+    var filteredTodos = TodoAPI.filterTodos(todos, true, '');
+    expect (filteredTodos.length).toBe(3);
+  });
+
   });
 });
