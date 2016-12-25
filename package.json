@@ -41,16 +41,16 @@
     "webpack": "^1.12.13"
   },
   "devDependencies": {
-    "foundation-sites": "^6.2.0",
+    "foundation-sites": "6.2.0",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
     "karma-mocha": "^0.2.2",
-    "sass-loader": "^3.1.2",
     "karma-mocha-reporter": "^2.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
-    "style-loader": "^0.13.0",
-    "mocha": "^2.4.5"
+    "style-loader": "^0.13.0"
   }
 }
