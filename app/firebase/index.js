@@ -8,10 +8,14 @@ try {
     storageBucket: "mlg-todo-app.appspot.com",
     messagingSenderId: "237347314069"
   };
+
+  firebase.initializeApp(config);
 } catch (e) {
 
 }
-firebase.initializeApp(config);
 
+
+
+export var githubProvider = new firebase.auth.GithubAuthProvider();
 export var firebaseRef = firebase.database().ref();
 export default firebase;
